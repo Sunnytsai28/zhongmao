@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hielo by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+
+
+		<!--team-->
+			<meta charset="utf-8">
+    <title>Home</title>
+    <!--import google icon fonts through cdn in this case no internet-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icon/css/materialdesignicons.min.css">
+    <!--import materialize css-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--hover effects-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+    <!--optimization for mobile-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+		
+		
+		
+		
+		
+		<!--地圖-->
+					<script>
+
+					function f(loc) {
+					document.getElementById("demo1").setAttribute("src", "https://maps.google.com.tw/maps?f=q&hl=zh-TW&q=" + loc+ "&z=16&t=q&output=embed");
+					}
+
+
+				// 取得網址裡的參數 
+					function GetUrlVar(VarName) 
+					{
+
+					//alert(VarName);
+					  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+					  var regexS = "[\\?&]" + VarName + "=([^&#]*)";
+					  var regex = new RegExp(regexS);
+					  var results = regex.exec(window.location.href);
+
+					  if (results == null)
+						 return "";
+					  else
+						 return results[1];
+						 
+					}
+					
+			</script>
+		
+		
+	</head>
+	
+	
+	<body class="subpage" onload="play()">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">中茂科技有限公司 <span>Since 2002</span></a></div>
+				<a href="#menu">選單</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">主頁</a></li>
+				
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="service.html">服務</a></li>
+					<li><a href="cooperation.html">合作</a></li>
+					<li><a href="contact.html">聯絡我們</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>中茂科技有限公司</p>
+						<h4>關於我們</h4>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>中茂科技有限公司</p>
+								<h4>簡介</h4>
+							</header>
+							
+							
+		<!--相簿-->
+							<p id="demo">
+								<img src="https://images.pexels.com/photos/1036857/pexels-photo-1036857.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Trulli" width="500" height="333">
+								</p>
+
+								
+
+								<script>
+									var myVar
+									var i=0;
+								
+									function myFunction1(x) {
+									
+										var cars = ["https://images.pexels.com/photos/1036857/pexels-photo-1036857.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", 
+												"https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", 
+												"https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" ];
+									
+										if (i==0 && x==-1) {
+											} 
+										else if (i==cars.length-1 && x==1) {
+											} 
+										else {
+											i=i+x;
+											document.getElementById("demo").innerHTML = '<img src=' + cars[i] + ' alt="Trulli" width="500" height="333">';
+											}
+										}
+									
+								
+									function autosliding() {
+									
+										var cars = ["https://images.pexels.com/photos/1036857/pexels-photo-1036857.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", 
+												"https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", 
+												"https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" ];
+									
+										if (i==cars.length-1) {
+											i=-1
+											}  
+									
+										else {
+											i=i+1;
+											document.getElementById("demo").innerHTML = '<img src=' + cars[i] + ' alt="Trulli" width="500" height="333">';
+											}
+										}
+									
+									function play() {
+										if(myVar != null) clearInterval(myVar);
+										myVar = setInterval(autosliding, 1500);
+										}
+									
+									function myStopFunction() {
+										clearInterval(myVar);
+										}
+									
+								</script>
+							
+								<p><li>成立於民國91年4月，延續前身原為1998年時，亞洲地區最大辦公室事務用品廠商-香港商西捷股份有限公司 台灣分公司，在西捷結束營業後，由原在台分公司員工共同成立中茂科技有限公司繼續服務客戶。</li></p>
+								
+								<p><li>92年為國內第一個使用美國3M原裝進口印表機專用清碳機，為客戶清除積碳保養印表機，維護客戶身體健康的專業耗材供應經銷商。</li></p>
+								
+								<p><li>94年國內通過環保署碳粉匣環保標章法規，由進口美國環保碳粉匣，改為銷售國內通過環保署環保標章認證許可，台灣本土製造商-威鵬科技的環保碳粉匣做為主要銷售品牌。</li></p>
+								
+								<p><li>月底企業用戶結帳時，可提供採購人員當月採購明細報表。送貨方面配合快遞和貨運行，在標準壹個工作天內都可以到貨，必定做到收貨人指定、收貨地點指定到達。</li></p>
+								
+								<p><li>配合10年以上的客戶有：三商美邦人壽、國票綜合證券、元富證券、台灣高鐵、陽明海運集團關係企業、環球水泥、新光吳火獅紀念醫院、潤泰全球等等，都是長期支持與往來的客戶。</li></p>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		<!--地圖-->
+		<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>中茂科技有限公司</p>
+							</header>
+							<ul class="actions">
+									<li><a href="javascript:f('24.997190, 121.506914');" class="button special">公司總部</a></li>
+								</ul>
+			
+							<header class="align-center">
+								<p>合作10年以上客戶</p>
+							</header>
+							<ul class="actions">
+									<li><a href="javascript:f('25.027160, 121.466244');" class="button alt">三商美邦人壽</a></li>
+									<li><a href="javascript:f('24.980536, 121.258043');" class="button alt">國票綜合證券</a></li>
+									<li><a href="javascript:f('25.027863, 121.321157');" class="button alt">元富證券</a></li>
+									<li><a href="javascript:f('25.136687, 121.605487');" class="button alt">台灣高鐵</a></li>
+									<li><a href="javascript:f('25.192905, 121.704290');" class="button alt">陽明海運集團關係企業</a></li>
+									<li><a href="javascript:f('25.129801, 121.517448');" class="button alt">環球水泥</a></li>
+									<li><a href="javascript:f('25.093687, 121.519609');" class="button alt">新光吳火獅紀念醫院</a></li>
+									<li><a href="javascript:f('25.047185, 121.542525');" class="button alt">潤泰全球</a></li>
+								</ul>
+
+			<iframe id="demo1" src="https://maps.google.com.tw/maps?f=q&hl=zh-TW&q=24.121308,120.677175&z=16&t=q&output=embed" width="100%" height="400">
+
+			</iframe>
+						
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		<!--team section-->
+			<section class="wrapper style2" id="teamsection">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+			<header class="align-center">
+				<p>Meticulously create perfect, cooperate to achieve transcendence.</p>
+				<h4>團隊</h4>
+				</header>
+			
+			
+			
+  
+  <div class="row">
+  
+  <div class="col s12 m4 l4  center-align">
+    <div class="card-panel black darken-4">
+      <img src="https://images.pexels.com/photos/716411/pexels-photo-716411.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width="100%" height="100%" alt="">
+      <div class="team1border">
+      </div>
+      <li class="white-text" id="teamname">蔡逸蕙</li>
+      <li class="white-text" id="teamrole">董事長</li>
+      <div class="team2border">
+      </div>
+     <ul class="icons">
+		<li><a href="https://www.facebook.com/profile.php?id=100004171535521" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+		<li><a href="https://www.instagram.com/hui_0.2.0.8/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+		<li><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E8%8C%82%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.997064,121.5047363,17z/data=!3m1!4b1!4m5!3m4!1s0x346802762222eeb7:0xb7ddad935fe2954b!8m2!3d24.997064!4d121.506925?hl=zh-TW" class="material-icons" ><span class="label">language</span></a></li>
+		</ul>
+    </div>
+  </div>
+  
+  <div class="col s12 m4 l4  center-align">
+    <div class="card-panel black darken-4">
+      <img src="https://images.pexels.com/photos/789296/pexels-photo-789296.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width="100%" height="100%" alt="">
+      <div class="team1border">
+      </div>
+      <li class="white-text" id="teamname">蔡意會</li>
+      <li class="white-text" id="teamrole">執行長</li>
+      <div class="team2border">
+      </div>
+      <ul class="icons">
+		<li><a href="https://www.facebook.com/profile.php?id=100004171535521" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+		<li><a href="https://www.instagram.com/hui_0.2.0.8/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+		<li><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E8%8C%82%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.997064,121.5047363,17z/data=!3m1!4b1!4m5!3m4!1s0x346802762222eeb7:0xb7ddad935fe2954b!8m2!3d24.997064!4d121.506925?hl=zh-TW" class="material-icons" ><span class="label">language</span></a></li>
+		</ul>
+    </div>
+  </div>
+
+  <div class="col s12 m4 l4  center-align">
+    <div class="card-panel black darken-4">
+      <img src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width="100%" height="100%" alt="">
+      <div class="team1border">
+      </div>
+      <li class="white-text" id="teamname">蔡議會</li>
+      <li class="white-text" id="teamrole">總裁</li>
+      <div class="team2border">
+      </div>
+      <ul class="icons">
+		<li><a href="https://www.facebook.com/profile.php?id=100004171535521" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+		<li><a href="https://www.instagram.com/hui_0.2.0.8/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+		<li><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E8%8C%82%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.997064,121.5047363,17z/data=!3m1!4b1!4m5!3m4!1s0x346802762222eeb7:0xb7ddad935fe2954b!8m2!3d24.997064!4d121.506925?hl=zh-TW" class="material-icons" ><span class="label">language</span></a></li>
+		</ul>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+</div>
+
+</section>
+			
+			
+		<!--地圖
+			<script>
+
+				 // 要先取得網址裡的路徑起點終點經緯度參數 
+						  var X = decodeURIComponent(GetUrlVar('loc'));
+						  f(X);
+
+				</script>-->
+			
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/profile.php?id=100004171535521" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/hui_0.2.0.8/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E8%8C%82%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.997064,121.5047363,17z/data=!3m1!4b1!4m5!3m4!1s0x346802762222eeb7:0xb7ddad935fe2954b!8m2!3d24.997064!4d121.506925?hl=zh-TW" class="material-icons" ><span class="label">language</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

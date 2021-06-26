@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Hielo by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+		
+		<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+	  
+	  
+	  
+	  
+	  <!--icon-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		
+		<!--商品分類bar-->
+		<title>W3.CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		
+		
+		
+		
+		
+	<!--連接試算表-->	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Tabletop.js範例程式</title>
+		
+		<!-- 利用Tabletop.JS讀取Google Sheet https://github.com/jsoma/tabletop -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+		
+		
+		
+		
+		
+			
+		
+		<!--原本的產品card(上面那個)-->
+		
+		
+		<script  type='text/javascript'>
+		
+		
+		
+		
+		 // 於Google Spreadsheet建立的範例資料為 https://docs.google.com/spreadsheets/d/e/2PACX-1vR9LivzlVjV3Mp9EOw0rCh46tDacBY6uQ8AT4k6ObLecvL8P-BpgKza9IOyGfFkP3tEdNSereSt8wxT/pubhtml
+		  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/19kGs0D6qu5S7gCRzxV735WPIon6PXcy55-GtGJRXEo8/pubhtml';
+
+		  function init() {
+			Tabletop.init( { key: publicSpreadsheetUrl,
+							 callback: showInfo,
+							 simpleSheet: true } )
+	  }
+		
+		
+		
+		
+		
+		
+		function showInfo(data, tabletop){
+			alert('Welcome!')
+			console.log(data);
+		
+			var str;
+			
+			var i;
+			
+			for(var i=0 ; i<data.length ; i++) {
+				
+				str+='     <div class="col s12 m6 l2" style="width: 25rem;">'
+				str+='			<div class="box">'
+				str+='				<div class="image fit">'
+				str+='					<img src="' + data[i].pictures + '" alt="" />'
+				str+='				</div>'
+				str+='				<div class="content">'
+				str+='					<header class="align-center">'
+				str+='						<p>'+ data[i].content1 +'</p>'
+				str+='						<h4>'+ data[i].topic +'</h4>'
+				str+='					</header>'
+				str+='					<footer class="align-center">'
+				str+='						<a href="test2.html?pid1=' + i + '&pid2='+i+'&pid3='+i+'&pid4='+i+'"  class="button alt">'+ data[i].content2 +'</a>'
+				str+='					</footer>'
+				str+='				</div>'
+				str+='			</div>'
+				str+='		</div>'
+				
+				}
+				document.getElementById("demo1").innerHTML = str;
+				document.getElementById("demo2").innerHTML = str;
+				document.getElementById("demo3").innerHTML = str;
+				document.getElementById("demo4").innerHTML = str;
+		
+		}
+	
+	  window.addEventListener('DOMContentLoaded', init)
+	</script>
+	
+		
+		
+
+	</head>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<body onload="showInfo()">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">中茂科技有限公司 <span>Since 2002</span></a></div>
+				<a href="#menu">選單</a>
+			</header>
+			
+	
+
+		<!-- Nav選單 -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">主頁</a></li>
+					<li><a href="product.html">產品</a></li>
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="service.html">服務</a></li>
+					<li><a href="cooperation.html">合作</a></li>
+					<li><a href="contact.html">聯絡我們</a></li>
+				</ul>
+			</nav>
+		
+			
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/slide01.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>雷射碳粉匣德國德邦集團 <a href="https://www.ibm.com/tw-zh"><strong>IBM</strong></a><br>品牌獨有性、綠色環保、色彩的準確性、德國技術品質的保證</br></p>
+							<h2>雷射印表機碳粉匣</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide02.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>MOTOROLA、ALCATEL、HTT<br>免執照、雙頻雙待、高續航、LED背光三色、</p>
+							<h2>無線電對講機</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide03.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>BSMI認證、紫外線UVC抑菌技術、高效光觸媒技術</p>
+							<h2>日本aiwa 愛華空氣清淨機</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide04.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>快速預熱 增加工作效率、加熱均勻 專業護貝品質</p>
+							<h2>NETT A3專業護貝機</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide05.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>HTT、KOLIN、SANLUX<br>國家考試、工程專用</p>
+							<h2>計算機</h2>
+						</header>
+					</div>
+				</article>
+			</section>
+			
+			
+		<!--商品分類bar-->
+			<div class="w3-bar w3-black">
+			<div class="row">
+			<br>
+			  <div class="col l1"><div class="w3-bar-item w3-hover-purple"></div></div>
+			  <div class="col l1"><a href="pen.html"><div class="w3-bar-item w3-hover-red">文具</div></a></div>
+			  <div class="col l2"><a href="computer.html"><div class="w3-bar-item w3-hover-orange ">電腦耗材</div></a></div>
+			  <div class="col l2"><a href="printer.html"><div class="w3-bar-item w3-hover-yellow">印表機、傳真機</div></a></div>
+			  <div class="col l2"><a href="eletronic.html"><div class="w3-bar-item w3-hover-green">3c相關周邊</div></a></div>
+			  <div class="col l2"><a href="home.html"><div class="w3-bar-item w3-hover-blue ">家電用品</div></a></div>
+			  <div class="col l1"><a href="others.html"><div class="w3-bar-item w3-hover-purple">其他</div></a></div>
+			  <div class="col l1"><div class="w3-bar-item"></div></a></div>
+			</div>
+			</div>	
+			
+			
+			
+		</br>
+			
+
+
+		<!--分類icon-->
+		<tr><td align="center">
+		<div class="row">
+		
+			<div class="col l1"><i class="small material-icons "></i></div>
+			<div class="col l3"><i class="medium material-icons w3-hover-red"><a href="pen.html" >assessment</a></i></div>
+			<div class="col l3"><i class="medium material-icons w3-hover-yellow"><a href="#" >add_shopping_cart</a></i></div>
+			<div class="col l3"><i class="medium material-icons w3-hover-blue"><a href="#" >airplanemode_inactive</a></i></div>
+			<div class="col l2"><i class="medium material-icons w3-hover-purple"><a href="#" >alarm_on</a></i></div>
+			
+		
+		</div>	
+		</td></tr>
+		
+		
+		
+		<!--icon bar-->
+			<div class="w3-bar w3-white">
+			<div class="row">
+			
+			  <div class="col l1"><div class="w3-bar-item w3-hover-purple"></div></div>
+			  <div class="col l3"><div class="w3-bar-item w3-hover-red">熱門</div></div>
+			  <div class="col l3"><div class="w3-bar-item w3-hover-yellow ">新上架</div></div>
+			  <div class="col l3"><div class="w3-bar-item w3-hover-blue">免運</div></div>
+			  <div class="col l2"><div class="w3-bar-item w3-hover-purple">快速出貨</div></div>
+			</div>
+			</div>	
+		
+		
+
+		<!-- One卡片(主打產品)(head區的for迴圈)(上面那個) -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="row" id="demo1">
+
+						
+
+						
+
+					</div>
+				</div>
+			</section>
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/profile.php?id=100004171535521" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/hui_0.2.0.8/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E8%8C%82%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.997064,121.5047363,17z/data=!3m1!4b1!4m5!3m4!1s0x346802762222eeb7:0xb7ddad935fe2954b!8m2!3d24.997064!4d121.506925?hl=zh-TW" class="material-icons" ><span class="label">language</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

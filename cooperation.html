@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Hielo by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+		<!--form表單-->
+			<!--Import Google Icon Font-->
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		 
+		  <!-- Compiled and minified CSS -->
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+		  <!-- Compiled and minified JavaScript -->
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+			   
+		  <!--Let browser know website is optimized for mobile-->
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<script type="text/javascript">
+		function formresponse() {
+		 var m = document.forms["form3"]["Name"].value;
+		 var d = document.forms["form3"]["Telephone"].value;
+		 var s = document.forms["form3"]["Email"].value;
+		 var r = document.forms["form3"]["date"].value;
+		 var q = document.forms["form3"]["Message"].value;
+		 
+		 var str="";
+		 
+		 if (m==null || m=="")
+			{
+		  str += "公司名稱不可為空白!\n";
+			}
+		 if (d==null || d=="")
+			{
+		  str += "連絡電話不可為空白!\n";
+			}
+		 if (s==null || s=="")
+			{
+		  str += "Email不可為空白!\n";
+			}
+			if (r==null || r=="")
+			{
+		  str += "方便面談日期不可為空白!\n";
+			}
+			if (q==null || q=="")
+			{
+		  str += "期望合作內容不可為空白!\n";
+			}
+		 if (str != "")
+			{
+			alert(str)
+			}
+		 
+		 else
+			{
+		  var MySubmit = "https://docs.google.com/forms/d/e/1FAIpQLSdu5r3rhqpwmc_Xl8d1EYPyaiv74FNYZDGfl-4jV01zbGZdJg/formResponse?usp=pp_url&entry.779480746=" + m + "&entry.980310001=" + d +"&entry.1377716229=" + s +"&entry.685705353="+r+"&entry.1009301697="+q;
+		  var NewOpen = window.open(MySubmit);
+			}
+
+		}
+		</script>
+		
+		
+		
+		
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">中茂科技有限公司 <span>Since 2002</span></a></div>
+				<a href="#menu">選單</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">主頁</a></li>
+					
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="service.html">服務</a></li>
+					<li><a href="cooperation.html">合作</a></li>
+					<li><a href="contact.html">聯絡我們</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>中茂科技有限公司</p>
+						<h4>合作</h4>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>Welcome to cooperate with us!</p>
+								<h4>歡迎與我們合作!</h4>
+							</header>
+							
+							
+							
+			<!--from表單-->
+
+				
+
+					<form  method="post" name="form3" action="javascript:formresponse();">
+
+						<div class="row">
+						<div class="col l6">
+						
+							<label for="name">公司名稱</label>
+							<input name="Name" id="Name" type="text" placeholder="Name">
+						
+						</div>
+						<div class="col l6">
+						
+							<label for="telephone">連絡電話</label>
+							<input name="telephone" id="Telephone" type="text" placeholder="Telephone">
+						
+						</div>
+						</div>
+						
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="Email" id="Email" type="email" placeholder="Email">
+						</div>
+						<br>
+						<div class="field">
+							<label for="date">方便面談日期</label>
+							<input name="date" id="date" type="date" placeholder="Date">
+						</div>
+						<br>
+						<div class="field">
+							<label for="message">期望合作內容</label>
+							<textarea name="Message" id="Message" rows="6" placeholder="Message"></textarea>
+						</div>
+						
+							<center>
+							<div class="input-field col 12">
+							  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+								<i class="material-icons right">send</i>
+							</button>
+							</div>
+						</center>
+				</div>		
+						
+					</form>
+					
+					
+					
+					
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+				
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/profile.php?id=100004171535521" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/hui_0.2.0.8/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E8%8C%82%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.997064,121.5047363,17z/data=!3m1!4b1!4m5!3m4!1s0x346802762222eeb7:0xb7ddad935fe2954b!8m2!3d24.997064!4d121.506925?hl=zh-TW" class="material-icons" ><span class="label">language</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
